@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 2: Prepare Food Material</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat+Alternates:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="step3.html">Next Step</a>
+    </nav>
+    <div class="logo">LHN</div>
+  </header>
+  <main>
+    <h1>Step 2: Prepare Food Material</h1>
+    <img src="food-material.jpg" alt="Prepared Food Material">
+    <p>
+      Preparing the perfect hotpot begins with selecting a variety of fresh ingredients.
+       From thinly sliced beef shank and tender beef tripe to Spam and quail eggs, every item plays a role in creating a flavorful experience. 
+       Using a meat slicer ensures precise and uniform cuts, allowing the ingredients to cook evenly in the boiling broth. 
+       The preparation process is as much a part of the joy as the meal itself, setting the stage for a truly authentic hotpot experience
+    </p>
+  </main>
+  <footer>
+    <div class="logo">LHN</div>
+    <p>Haonan Liu | liuhaonancq@gmail.com</p>
+    <a href="step1.html" class="last-step">Last Step</a>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('hidden');
+    });
+  </script>
+  
+</body>
+</html>

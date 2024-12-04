@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chongqing Hotpot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat+Alternates:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Service</button>
+        <div class="dropdown-content">
+          <a href="step1.html">Step 1: Spice Mix Base</a>
+          <a href="step2.html">Step 2: Prepare Food Material</a>
+          <a href="step3.html">Step 3: Preparing the Sauce</a>
+          <a href="final.html">Final Step: Cook All Ingredients</a>
+        </div>
+      </div>
+    </nav>
+    <div class="logo">LHN</div>
+  </header>
+  <main>
+    <h1>Chongqing Hotpot</h1>
+    <img src="hotpot.png" alt="Chongqing Hotpot">
+    <p>
+      Hotpot is more than just a meal—it's a celebration of flavors, culture, and togetherness. 
+      Inspired by my passion for Chongqing hotpot, this site is designed to bring the authentic, fiery experience of this iconic dish to everyone, no matter where you are in the world.
+      Whether you're a hotpot enthusiast eager to explore and share the nuances of your favorite recipes, or an international student longing for the comfort of a homemade hotpot abroad, this guide is for you. 
+      With easy-to-follow steps, tips for ingredient preparation, and the secrets to a rich, flavorful broth, you'll soon master the art of hotpot and create unforgettable moments with friends and family.
+      Let’s embark on this flavorful journey and savor the magic of Chongqing hotpot together!
+    </p>
+  </main>
+  <footer>
+    <div class="logo">LHN</div>
+    <p>Haonan Liu | liuhaonancq@gmail.com</p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('hidden');
+    });
+  </script>
+  
+</body>
+</html>

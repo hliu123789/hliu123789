@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 3: Preparing the Sauce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat+Alternates:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="final.html">Next Step</a>
+    </nav>
+    <div class="logo">LHN</div>
+  </header>
+  <main>
+    <h1>Step 3: Preparing the Sauce</h1>
+    <img src="sauce.png" alt="Prepared Sauce">
+    <p>
+        Prepare chopped green onions, minced garlic, and chopped Thai chilies. 
+        Then, crush them and drizzle with hot oil.  
+        Add white sugar, salt, white sesame seeds, crushed peanuts, sesame oil, chili oil, oyster sauce, and cilantro.
+    </p>
+  </main>
+  <footer>
+    <div class="logo">LHN</div>
+    <p>Haonan Liu | liuhaonancq@gmail.com</p>
+    <a href="step2.html" class="last-step">Last Step</a>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('hidden');
+    });
+  </script>
+  
+</body>
+</html>
