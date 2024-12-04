@@ -14,11 +14,11 @@ body {
 header {
     background-color: #F3E9D3;
     width: 100%;
-    height: 60px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 5px 10px;
+    justify-content: space-between;
+    padding: 10px;
     font-size: 16pt;
 }
 
@@ -44,20 +44,17 @@ header .logo:hover {
 
 nav {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-}
-
-nav .dropdown {
-    position: relative;
 }
 
 nav a {
     color: #FFFFFF;
     background-color: #BBA55D;
-    padding: 5px 10px;
+    padding: 8px 10px;
     border-radius: 5px;
-    font-size: 16pt;
-    margin-right: 5px;
+    font-size: 14pt;
+    margin: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -76,7 +73,7 @@ nav a:hover {
     padding: 5px 10px;
     border: none;
     cursor: pointer;
-    font-size: 16pt;
+    font-size: 14pt;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -84,6 +81,10 @@ nav a:hover {
 .dropbtn:hover, .dropbtn:focus {
     background-color: #A8974D;
     transform: scale(1.05);
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-content {
@@ -96,7 +97,7 @@ nav a:hover {
     min-width: 150px;
     z-index: 1;
     border-radius: 5px;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .dropdown-content a {
@@ -177,15 +178,17 @@ footer p {
     font-family: 'Inter', sans-serif;
     font-size: 16pt;
     color: #333;
+    margin-bottom: 40px;
 }
 
 footer .last-step {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 80px;
+    right: 5px;
+    margin-bottom: auto;
     background-color: #BBA55D;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 16pt;
@@ -199,14 +202,26 @@ footer .last-step:hover {
 
 @media (min-width: 768px) {
     header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         height: 80px;
         padding: 10px 20px;
         font-size: 18pt;
     }
 
+    header .logo {
+        margin-bottom: 0;
+        font-size: 20pt;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     nav a {
         font-size: 18pt;
         padding: 15px 20px;
+        margin-right: 10px;
     }
 
     .dropbtn {
